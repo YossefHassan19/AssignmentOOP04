@@ -61,6 +61,14 @@ namespace AssignmentOOP04
             //}
 
             #endregion
+
+            #region Part03 4-Create ITrackable, 4-Create IInsurable
+
+            //4-Create ITrackable 
+            //4-Create IInsurable
+
+            #endregion
+
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using AssignmentOOP04.Classes;
+using AssignmentOOP04.Interfaces;
 using AssignmentOOP04.Struct;
 using System;
 using System.Collections.Generic;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace AssignmentOOP03.Classes
 {
-    internal class ExpressShipment : Shipment
+    internal class ExpressShipment : Shipment, ITrackable, IInsurable
     {
         #region Prop
 
@@ -64,6 +65,16 @@ namespace AssignmentOOP03.Classes
             Console.WriteLine($"Destination: {Destination.GetFullAddress()}");
             Console.WriteLine($"Extra Fee: {ExtraFee}");
             Console.WriteLine($"Estimated Cost: {EstimatedCost}");
+        }
+
+        public string GetTrackingStatus()
+        {
+            return $"Shipment {TrackingCode} is Out for Delivery.";
+        }
+
+        public decimal CalculateInsurance()
+        {
+            return EstimatedCost * 0.08m;
         }
 
 

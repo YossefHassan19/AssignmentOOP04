@@ -1,4 +1,5 @@
-﻿using AssignmentOOP04.Struct;
+﻿using AssignmentOOP04.Interfaces;
+using AssignmentOOP04.Struct;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace AssignmentOOP04.Classes
 {
-    internal class StandardShipment : Shipment
+    internal class StandardShipment : Shipment, ITrackable, IInsurable
     {
 
         public StandardShipment(string tr, string desc, decimal wt, decimal fee, DeliveryAddress dest) : base(tr, desc, wt, fee, dest) { }
@@ -16,6 +17,17 @@ namespace AssignmentOOP04.Classes
         {
             get { return DeliveryFee + (Weight * 5); }
         }
+        public string GetTrackingStatus()
+        {
+            return $"Shipment {TrackingCode} is Ready.";
+        }
+
+        public decimal CalculateInsurance()
+        {
+            return EstimatedCost * 0.05m;
+        }
+
+
         public override void PrintShipment()
         {
             Console.WriteLine("---------------------");

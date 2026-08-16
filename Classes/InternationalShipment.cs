@@ -1,4 +1,5 @@
-﻿using AssignmentOOP04.Struct;
+﻿using AssignmentOOP04.Interfaces;
+using AssignmentOOP04.Struct;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace AssignmentOOP04.Classes
 {
-    internal class InternationalShipment : Shipment
+    internal class InternationalShipment : Shipment, ITrackable, IInsurable
     {
         #region Prop
 
@@ -90,6 +91,16 @@ namespace AssignmentOOP04.Classes
         public virtual string GenerateCustomsReport()
         {
             return $"Customs Report - {TrackingCode}: Destination={DestinationCountry}, CustomsFee={CustomsFee} ";
+        }
+
+        public string GetTrackingStatus()
+        {
+            return $"Shipment {TrackingCode} has been Delivered.";
+        }
+
+        public decimal CalculateInsurance()
+        {
+            return EstimatedCost * 0.12m;
         }
 
         #endregion
