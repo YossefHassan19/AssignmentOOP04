@@ -32,6 +32,13 @@
 
             #endregion
 
+            #region Part02 1-Convert Shipment into an Abstract Class, 2-Create Abstract Members
+
+            //1-Convert Shipment into an Abstract Class
+            //2-Create Abstract Members
+
+            #endregion
+
         }
     }
 }
