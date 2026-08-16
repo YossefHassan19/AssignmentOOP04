@@ -117,20 +117,7 @@ namespace AssignmentOOP04.Classes
                 }
             }
         }
-        public void PrintInsuringStatuses()
-        {
-            Console.WriteLine("=========================================");
-            Console.WriteLine("Insuring Status");
-            Console.WriteLine("=========================================");
-
-            foreach (var shipment in shipments)
-            {
-                if (shipment is IInsurable insurable)
-                {
-                    Console.WriteLine(insurable.CalculateInsurance());
-                }
-            }
-        }
+        
 
         #endregion
 

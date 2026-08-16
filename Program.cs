@@ -1,5 +1,6 @@
 ﻿using AssignmentOOP03.Classes;
 using AssignmentOOP04.Classes;
+using AssignmentOOP04.Interfaces;
 using AssignmentOOP04.Struct;
 
 namespace AssignmentOOP04
@@ -78,6 +79,55 @@ namespace AssignmentOOP04
             #region Part02 7-Update DeliveryCenter
 
             //7-Update DeliveryCenter
+
+            #endregion
+
+            #region Part02 8-Main() Checklist
+
+            //8-Main() Checklist
+
+            //DeliveryCenter center = new DeliveryCenter("Cairo Center");
+
+            //DeliveryAddress addr01 = new DeliveryAddress("Cairo", "Tahrir", 10);
+            //StandardShipment sh01 = new StandardShipment("lap123", "Laptop", 5m, 10.0m, addr01);
+
+            //DeliveryAddress addr02 = new DeliveryAddress("Giza", "Alahram", 20);
+            //ExpressShipment sh02 = new ExpressShipment("tele456", "Telephone", 10m, 15.0m, addr02, 5.0m);
+
+            //DeliveryAddress addr03 = new DeliveryAddress("Alex", "Elraml Station", 30);
+            //InternationalShipment sh03 = new InternationalShipment("comp789", "Computer", 15m, 20.0m, addr03, "Egypt", 10.0m);
+
+            //center.AddShipment(sh01);
+            //center.AddShipment(sh02);
+            //center.AddShipment(sh03);
+
+            //center.PrintAllShipments();
+
+            //center.PrintTrackingStatuses();
+
+            //Console.WriteLine("=========================================");
+            //Console.WriteLine("Insurance");
+            //Console.WriteLine("=========================================");
+            //DeliveryReport report = new DeliveryReport();
+            //Console.WriteLine($"Standard Shipment Insurance : {sh01.CalculateInsurance()} EGP");
+            //Console.WriteLine($"Express Shipment Insurance : {sh02.CalculateInsurance()} EGP");
+            //Console.WriteLine($"International Shipment Insurance : {sh03.CalculateInsurance()} EGP");
+
+
+            //ITrackable[] trackables = { sh01, sh02, sh03 };
+            //foreach (ITrackable trackable in trackables)
+            //{
+            //    Console.WriteLine(trackable.GetTrackingStatus());
+            //}
+
+            //IInsurable[] insurables = { sh01, sh02, sh03 };
+            //foreach (IInsurable insurable in insurables)
+            //{
+            //    Console.WriteLine(insurable.CalculateInsurance());
+            //}
+
+            //Console.WriteLine("=========================================");
+            //Console.WriteLine("Interface Polymorphism Demonstrated Successfully.");
 
             #endregion
 
