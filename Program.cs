@@ -17,6 +17,21 @@
 
             #endregion
 
+            #region Part01 Question02
+
+            //a)What is the difference between an Abstract Class and an Interface?
+            //Abstract class can have fields, can have constructors and class can inherit from one abstract class
+            //Interface can't have fields, can't have constructors and class can implement multiple interfaces
+
+            //b)When would you choose an Interface instead of an Abstract Class?
+            //When you don't have fields, require class to support multiple contract
+
+            //c)Can a class inherit from multiple abstract classes? Can it implement multiple interfaces?
+            //C# doesn't support multiple inheritance.
+            //Class can implement many interfaces because C# suppory multiple implementation
+
+            #endregion
+
         }
     }
 }
