@@ -1,4 +1,8 @@
-﻿namespace AssignmentOOP04
+﻿using AssignmentOOP03.Classes;
+using AssignmentOOP04.Classes;
+using AssignmentOOP04.Struct;
+
+namespace AssignmentOOP04
 {
     internal class Program
     {
@@ -39,6 +43,24 @@
 
             #endregion
 
+            #region Part02 3-Update All Shipment Types
+
+            //3-Update All Shipment Types
+
+            //Shipment[] shipments =
+            //{
+            //    new StandardShipment("lap","Laptop", 20m, 20m, new DeliveryAddress("Cairo","Tahrir",20)),
+            //    new ExpressShipment("lap","Laptop", 20m, 20m, new DeliveryAddress("Cairo","Tahrir",20),20m),
+            //    new InternationalShipment("lap","Laptop", 20m, 20m, new DeliveryAddress("Cairo","Tahrir",20), "Egypt",30m)
+            //};
+
+            //foreach (Shipment shipment in shipments)
+            //{
+            //    shipment.PrintShipment();
+            //    Console.WriteLine(shipment.EstimatedCost);
+            //}
+
+            #endregion
         }
     }
 }
