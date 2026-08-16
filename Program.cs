@@ -62,10 +62,16 @@ namespace AssignmentOOP04
 
             #endregion
 
-            #region Part03 4-Create ITrackable, 4-Create IInsurable
+            #region Part02 4-Create ITrackable, 4-Create IInsurable
 
             //4-Create ITrackable 
             //4-Create IInsurable
+
+            #endregion
+
+            #region Part02 6-Create DeliveryReport
+
+            //6-Create DeliveryReport
 
             #endregion
 
